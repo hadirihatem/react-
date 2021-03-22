@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+/* eslint-disable react/jsx-no-undef */
+
 import './App.css';
+
+import MyTable from './MyTable';
+import Myform from './Myform'
+import Mynavbar from './Mynavbar';
+ import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Mynavbar/> 
+      <div className="App-header">
+        <Myform/>
+ 
+ <MyTable/>
+
+ </div>
     </div>
   );
 }
-
 export default App;
